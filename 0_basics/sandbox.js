@@ -110,7 +110,7 @@ console.log(likes+=10);
     <span>This blog has ${likes} likes </span>
  `;
 console.log(html);
-
+// test
 
 // 1 - Arrays ////////////
 let ninjas = ['karim', 'cherine', 'ibrahim'];
