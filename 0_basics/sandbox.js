@@ -141,3 +141,33 @@ let nameIndex = ninjas.indexOf('amr');
 let nameConcat = ninjas.concat(['ken','crystal']);
 console.log(nameIndex);
 console.log(nameConcat);
+
+// these are destrictuve methods, they alter original variable
+let pushTest = ninjas.push('ken');
+pushTest = ninjas.pop();
+console.log(pushTest);
+
+// NUlls /////
+let nullAge = null;
+console.log(nullAge, nullAge + 3, `the age is ${nullAge}`);
+
+// Booleans ///
+console.log(true, false, "true" , "false");
+
+// methods can return booleans
+let mail = 'karimdaw@me.com';
+let test = email.includes('!');
+console.log(test);
+
+// comparison operator
+let newAge = 25;
+console.log(newAge == 25); // get true
+console.log(newAge == 24); // get false
+console.log(newAge != 21); // get true
+console.log(newAge > 21); // get true
+console.log(newAge >= 24); // get true
+
+let newName = 'karim';
+console.log(newName == 'karim');
+console.log(newName == 'Karim');
+console.log(newName > 'Karim'); // lower case letters are greater than uppercase..
