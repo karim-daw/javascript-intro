@@ -171,3 +171,18 @@ let newName = 'karim';
 console.log(newName == 'karim');
 console.log(newName == 'Karim');
 console.log(newName > 'Karim'); // lower case letters are greater than uppercase..
+
+// === tripple equals is same value and type
+console.log(newName === 'Karim');
+
+// type conversion
+let myScore = '100';
+myScore = Number(myScore);
+console.log(myScore + 1);
+
+let strNumber = Number("hello");
+console.log(strNumber);
+
+// minus and even numbers are false
+// these are called falsey values 
+console.log(myScore, typeof myScore);
