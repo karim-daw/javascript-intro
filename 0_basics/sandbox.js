@@ -22,7 +22,7 @@ console.log(age,year);
 const points = 100;
 console.log(points);
 
-// old variables
+// old variables // dont use var anymore for modern javascript
 var score = 75;
 console.log(score);
 

@@ -1,11 +1,4 @@
 // for loops
-// for(let i = 0; i < 5; i++)
-// {
-//    console.log('in loop:',i);
-
-// }
-// console.log('loop finished');
-
 const names = ['sean','mario','luigi'];
 for(let i = 0; i < names.length; i++)
 {
@@ -87,6 +80,7 @@ for(let i = 0; i < scores.length; i++)
 }
 
 // switch statments - good for evalauting variables for several different cases
+// note! use only straight equlaity check ===
 const grade = 'D';
 
 switch(grade)
@@ -106,8 +100,4 @@ switch(grade)
    case 'E':
       console.log('you got an E!');
       break
-      
 }
-
-// using if statements
-
