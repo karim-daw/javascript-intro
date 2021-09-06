@@ -80,10 +80,19 @@ const logPerson = (person,index) => {
    console.log(`${index} - hello ${person}`);
 }
 
-// no pass the call back function from above
+// now pass the call back function from above
 people.forEach(logPerson);
 
-// get reference to the 'ul'
-const ul = document.querySelector('.people');
 
+
+// get reference to the 'ul'
+const ul = document.querySelector('.people'); // this is a css selector , will learn later
 const newPeople = ['mario', 'luigi', 'bowser','wario','karim'];
+
+let html = ``; // empty template string
+people.forEach(function(person){
+   // create html template for each person
+   html += `<li style="color: purple">${person}</li>`;
+});
+console.log(html);
+ul.innerHTML = html; // puts htmal we made into ul
