@@ -90,7 +90,7 @@ const ul = document.querySelector('.people'); // this is a css selector , will l
 const newPeople = ['mario', 'luigi', 'bowser','wario','karim'];
 
 let html = ``; // empty template string
-people.forEach(function(person){
+people.forEach(person => {
    // create html template for each person
    html += `<li style="color: purple">${person}</li>`;
 });
