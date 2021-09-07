@@ -75,3 +75,25 @@ console.log(Math.trunc(area)); // takes just the first integer
 const random = Math.random();
 console.log(random);
 console.log(Math.round(random * 100)) // nice way to get random number 0 - 100
+
+
+// primitive values 
+let scoreOne = 50;
+let scoreTwo = scoreOne;
+// creates a copy and stores on stack
+ console.log(`scoreOne: ${scoreOne}` , `scoreTwo: ${scoreTwo}`)
+
+scoreOne = 100;
+// creates a copy and stores on stack
+ console.log(`scoreOne: ${scoreOne}` , `scoreTwo: ${scoreTwo}`)
+
+// reference values
+
+userOne = {
+   name: 'ryu',
+   age: 30
+};
+userTwo = userOne;
+userOne.age = 25
+console.log(userOne, userTwo);
+
