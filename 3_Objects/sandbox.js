@@ -93,6 +93,8 @@ userOne = {
    name: 'ryu',
    age: 30
 };
+// this will change only object in the heap, both variables
+// are pointing at same object in heap
 userTwo = userOne;
 userOne.age = 25
 console.log(userOne, userTwo);
