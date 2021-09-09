@@ -30,3 +30,46 @@ console.log(para3);
 console.log(para4);
 console.log(paras);
 console.log(errors);
+
+// get element by id
+const title = document.getElementById("page-title");
+console.log(title);
+
+// get element by their class name
+const errors1 = document.getElementsByClassName('error');
+console.log(errors1) // this will give HTML collection
+console.log(errors1[0]) // this still works, but foreach doesnt
+
+// get elements based on their tag name
+const paras1 = document.getElementsByTagName('p');
+console.log(paras1);
+console.log(paras1[0]);
+
+
+//////////
+
+// the next steps is to do something withit
+const para5 = document.querySelector('p');
+console.log(para5.innerText); // gets inner text of element
+para5.innerText = "ninjas are awesome"
+
+const paras2 = document.querySelectorAll('p')
+
+// change text of node list
+paras2.forEach(para => {
+   console.log(para.innerText);
+   para.innerText += " new Text";
+});
+
+// getting content class 
+const content = document.querySelector('.content');
+
+console.log(content.innerHTML);
+// you can change the contents html
+content.innerHTML += '<h2> This is a new H2<h2>'
+
+
+const people = ['mario', 'luigi', 'yoshi'];
+people.forEach(person => {
+   content.innerHTML += `<p>${person}</p>`;
+})
