@@ -21,12 +21,15 @@ let user = {
       { title: 'why mac and cheese rules', likes: 30 },
       { title: ' ten things to make with marmite', likes: 50 }
    ],
+   // login function
    login: function(){
       console.log('user logged in');
    },
+   // logout funciton
    logout: function(){
       console.log('user logged out');
    },
+   // log list blogs method
    logBlogs: function(){ // arrow functions would not work
  
       console.log('this user has written the following blogs:');
@@ -35,6 +38,7 @@ let user = {
          console.log(blog.title, blog.likes);
       })
    },
+   // log end method
    logEnd(){ // this is a different way to write methods inside objects
       console.log('this is a different way to write regular funcitons as methods')
    }
