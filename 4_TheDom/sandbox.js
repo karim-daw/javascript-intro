@@ -76,13 +76,28 @@ people.forEach(person => {
    content.innerHTML += `<p>${person}</p>`;
 });
 
-const link = document.querySelector('a');
 // this is how to get an attribute 
+const link = document.querySelector('a');
 console.log(link.getAttribute('href'));
 link.setAttribute('href','https://www.thenetninja.co.uk');
 link.innerText = "TheNet Ninja Website";
 
+// creating style attribute in javascript, you can either get or set
 const mssg = document.querySelector('p');
 mssg.setAttribute('class', 'success');
 mssg.setAttribute('style', 'color: Green');
 console.log(mssg.getAttribute('class'));
+
+// getting the styles of an object
+console.log(title.style);
+console.log(title.style.color);
+
+// changing styles
+title.style.margin = "50px";
+title.style.color = "crimson";
+
+// changing fonts
+title.style.fontSize = '60px';
+
+// removing property
+title.style.margin = '';
