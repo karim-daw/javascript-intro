@@ -69,7 +69,20 @@ console.log(content.innerHTML);
 content.innerHTML += '<h2> This is a new H2<h2>'
 
 
+// when we want data to spit out into the browser
+// can output html template in an array 
 const people = ['mario', 'luigi', 'yoshi'];
 people.forEach(person => {
    content.innerHTML += `<p>${person}</p>`;
-})
+});
+
+const link = document.querySelector('a');
+// this is how to get an attribute 
+console.log(link.getAttribute('href'));
+link.setAttribute('href','https://www.thenetninja.co.uk');
+link.innerText = "TheNet Ninja Website";
+
+const mssg = document.querySelector('p');
+mssg.setAttribute('class', 'success');
+mssg.setAttribute('style', 'color: Green');
+console.log(mssg.getAttribute('class'));
