@@ -49,9 +49,9 @@ console.log(paras1[0]);
 //////////
 
 // the next steps is to do something withit
-const para5 = document.querySelector('p');
-console.log(para5.innerText); // gets inner text of element
-para5.innerText = "ninjas are awesome"
+// const para5 = document.querySelector('p');
+// console.log(para5.innerText); // gets inner text of element
+// para5.innerText = "ninjas are awesome"
 
 const paras2 = document.querySelectorAll('p')
 
@@ -83,10 +83,10 @@ link.setAttribute('href','https://www.thenetninja.co.uk');
 link.innerText = "TheNet Ninja Website";
 
 // creating style attribute in javascript, you can either get or set
-const mssg = document.querySelector('p');
-mssg.setAttribute('class', 'success');
-mssg.setAttribute('style', 'color: Green');
-console.log(mssg.getAttribute('class'));
+// const mssg = document.querySelector('p');
+// mssg.setAttribute('class', 'success');
+// mssg.setAttribute('style', 'color: Green');
+// console.log(mssg.getAttribute('class'));
 
 // getting the styles of an object
 console.log(title.style);
@@ -101,3 +101,25 @@ title.style.fontSize = '60px';
 
 // removing property
 title.style.margin = '';
+
+// showing how to get classes from element
+// const content2 = document.querySelector('p');
+// console.log(content2.classList)
+// content2.classList.add('error')
+// content2.classList.remove('error')
+// content2.classList.add('success')
+
+// query p tags and check of iit has 'err'r or 'succes'
+const paras3 = document.querySelectorAll('p');
+paras3.forEach(p => {
+   // .innerTest will give all text that is visible
+   // .textContent will get all the text regardless of hidden or not
+   console.log(p.textContent);
+   // .includes can be used to see if it conlcudes certain word or phrase
+   if(p.textContent.includes('error')){
+      p.classList.add('error');
+   }
+   if(p.innerText.includes('success')){
+      p.classList.add('success');
+   }
+});
