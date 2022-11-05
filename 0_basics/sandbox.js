@@ -185,4 +185,13 @@ console.log(strNumber);
 
 // minus and even numbers are false
 // these are called falsey values 
-console.log(myScore, typeof myScore);
+console.log( myScore, typeof myScore );
+
+// spread operator ...foo
+// this behaves liek teh *arg key word in pything
+// takes any array type and makes it into individula items
+const filter = ( ...args ) => {
+   return args.filter(el => el === 1)
+}
+
+console.log(filter(1,2,3))

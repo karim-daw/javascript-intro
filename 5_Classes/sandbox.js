@@ -43,8 +43,6 @@ class Person extends Human {
 }
 
 
-
-
 const person = new Person()
 person.printGender()
 person.printName()
