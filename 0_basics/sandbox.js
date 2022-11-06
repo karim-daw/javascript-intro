@@ -11,12 +11,12 @@ let age = 25;
 console.log(age);
 
 let year = 2019;
-console.log(age,year);
+console.log(age, year);
 
 // updating variables, just redefine, no let
 year = 2021;
 age = 32;
-console.log(age,year);
+console.log(age, year);
 
 // constant variables
 const points = 100;
@@ -47,20 +47,20 @@ let result_1 = mystring.toLowerCase();
 console.log(result_0, result_1);
 
 // getting chars
-console.log(mystring.indexOf('o'));
-let email = 'karimdaw91@gmail.com';
+console.log(mystring.indexOf("o"));
+let email = "karimdaw91@gmail.com";
 let result = email.lastIndexOf("a");
 console.log(result);
 
 // slicing strings
-result = email.slice(0,5);
+result = email.slice(0, 5);
 console.log(result);
 
 // subs strings
-result = email.substr(4,10);
+result = email.substr(4, 10);
 console.log(result);
 
-result = email.replace('m', 'w');
+result = email.replace("m", "w");
 console.log(result);
 
 // 1 - Numbers ////////////
@@ -69,42 +69,43 @@ const pi = 3.14;
 console.log(radius, pi);
 
 // 2 - operators --- BIDMAS order or operations
-console.log(10/2);
+console.log(10 / 2);
 let answer = radius % 3; // remainder should be 1
 console.log(answer);
 
-answer = pi * radius**2; // formula for circle
+answer = pi * radius ** 2; // formula for circle
 console.log(answer.toString() + " " + "is the area of a circle");
 
 let likes = 10;
 // adding 1
 likes++;
 console.log(likes);
-// short hand notation for adding or whatever 
-console.log(likes+=10);
+// short hand notation for adding or whatever
+console.log((likes += 10));
 
 // NaN - not a number
- console.log(5/ 'hello');
+console.log(5 / "hello");
 
- // concatenating numbers
- answer = 'the blog has ' + likes + ' likes';
- console.log(answer);
+// concatenating numbers
+answer = "the blog has " + likes + " likes";
+console.log(answer);
 
- // template strings
- const title = "best reads of 2019";
- const author = 'Mario';
- const myLikes = 30;
+// template strings
+const title = "best reads of 2019";
+const author = "Mario";
+const myLikes = 30;
 
- // concat way
- let bigString = 'The blog called ' + title + ' by ' + author + ' has ' + myLikes + ' likes';
- console.log(bigString);
+// concat way
+let bigString =
+  "The blog called " + title + " by " + author + " has " + myLikes + " likes";
+console.log(bigString);
 
- // template way - use back ticks ->>> ``
- let betterString = `The blog called ${title} by ${author} has ${myLikes} likes`;
- console.log(betterString);
+// template way - use back ticks ->>> ``
+let betterString = `The blog called ${title} by ${author} has ${myLikes} likes`;
+console.log(betterString);
 
- // creating html templates - good for injecting dynamic content recieved from e.g DB
- let html = `
+// creating html templates - good for injecting dynamic content recieved from e.g DB
+let html = `
     <h2>${title}</h2
     <p>By ${author}</p>
     <span>This blog has ${likes} likes </span>
@@ -113,7 +114,7 @@ console.log(html);
 // test
 
 // 1 - Arrays ////////////
-let ninjas = ['karim', 'cherine', 'ibrahim'];
+let ninjas = ["karim", "cherine", "ibrahim"];
 console.log(ninjas);
 
 console.log(ninjas[0]);
@@ -124,8 +125,8 @@ console.log(ninjas[2]);
 ninjas[1] = "amr";
 console.log(ninjas);
 
-let ages = [20,25,24,21];
-let random = ['amr', 5 , 'steve', 13.444];
+let ages = [20, 25, 24, 21];
+let random = ["amr", 5, "steve", 13.444];
 console.log(random);
 
 // array methods
@@ -133,17 +134,17 @@ console.log(random);
 console.log(random.length);
 
 // join string
-let joinedString = ninjas.join(',');
+let joinedString = ninjas.join(",");
 console.log(joinedString);
 
-// getting index of array value 
-let nameIndex = ninjas.indexOf('amr');
-let nameConcat = ninjas.concat(['ken','crystal']);
+// getting index of array value
+let nameIndex = ninjas.indexOf("amr");
+let nameConcat = ninjas.concat(["ken", "crystal"]);
 console.log(nameIndex);
 console.log(nameConcat);
 
 // these are destrictuve methods, they alter original variable
-let pushTest = ninjas.push('ken');
+let pushTest = ninjas.push("ken");
 pushTest = ninjas.pop();
 console.log(pushTest);
 
@@ -152,11 +153,11 @@ let nullAge = null;
 console.log(nullAge, nullAge + 3, `the age is ${nullAge}`);
 
 // Booleans ///
-console.log(true, false, "true" , "false");
+console.log(true, false, "true", "false");
 
 // methods can return booleans
-let mail = 'karimdaw@me.com';
-let test = email.includes('!');
+let mail = "karimdaw@me.com";
+let test = email.includes("!");
 console.log(test);
 
 // comparison operator
@@ -167,16 +168,16 @@ console.log(newAge != 21); // get true
 console.log(newAge > 21); // get true
 console.log(newAge >= 24); // get true
 
-let newName = 'karim';
-console.log(newName == 'karim');
-console.log(newName == 'Karim');
-console.log(newName > 'Karim'); // lower case letters are greater than uppercase..
+let newName = "karim";
+console.log(newName == "karim");
+console.log(newName == "Karim");
+console.log(newName > "Karim"); // lower case letters are greater than uppercase..
 
 // === tripple equals is same value and type
-console.log(newName === 'Karim');
+console.log(newName === "Karim");
 
 // type conversion
-let myScore = '100';
+let myScore = "100";
 myScore = Number(myScore);
 console.log(myScore + 1);
 
@@ -184,23 +185,28 @@ let strNumber = Number("hello");
 console.log(strNumber);
 
 // minus and even numbers are false
-// these are called falsey values 
-console.log( myScore, typeof myScore );
+// these are called falsey values
+console.log(myScore, typeof myScore);
 
 // spread operator ...foo
 // this behaves liek teh *arg key word in pything
 // takes any array type and makes it into individula items
-const numbersExample = [1, 2, 3]
-const newNumbersExample = [...numbersExample, 4]
-console.log( newNumbersExample )
+const numbersExample = [1, 2, 3];
+const newNumbersExample = [...numbersExample, 4];
+console.log(newNumbersExample);
 
 // spread operator can also work on calsses
 // see classes file
 
+const filter = (...args) => {
+  return args.filter((el) => el === 1);
+};
 
-const filter = ( ...args ) => {
-   return args.filter(el => el === 1) 
-}
+const numbers = [1, 2, 3, 4, 1, 3, 2, 1];
+console.log(filter(numbers, 1, 2, 3));
 
-const numbers = [1,2,3,4,1,3,2,1]
-console.log( filter( numbers, 1, 2, 3 ) )
+// destructing
+const deNumber = [1, 2, 3];
+[num1, num2] = deNumber;
+console.log(num1);
+console.log(num2);

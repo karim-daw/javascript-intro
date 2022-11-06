@@ -1,47 +1,48 @@
 // Object literals
 
-
 // creating an array of objects
-const blogs =[
-   { title: 'why mac and cheese rules', likes: 30 },
-   { title: ' ten things to make with marmite', likes: 50 }
+const blogs = [
+  { title: "why mac and cheese rules", likes: 30 },
+  { title: " ten things to make with marmite", likes: 50 },
 ];
 
 // console.log(blogs)
 
-
-
-// this is a key value pair, 
+// this is a key value pair,
 let user = {
-   name: 'crystal',
-   age: 30,
-   email: 'karimdaw91@gmail.com',
-   location: 'berlin',
-   blogs: [
-      { title: 'why mac and cheese rules', likes: 30 },
-      { title: ' ten things to make with marmite', likes: 50 }
-   ],
-   // login function
-   login: function(){
-      console.log('user logged in');
-   },
-   // logout funciton
-   logout: function(){
-      console.log('user logged out');
-   },
-   // log list blogs method
-   logBlogs: function(){ // arrow functions would not work
- 
-      console.log('this user has written the following blogs:');
-      // can use foreach here
-      this.blogs.forEach(function(blog) {
-         console.log(blog.title, blog.likes);
-      })
-   },
-   // log end method
-   logEnd(){ // this is a different way to write methods inside objects
-      console.log('this is a different way to write regular funcitons as methods')
-   }
+  name: "crystal",
+  age: 30,
+  email: "karimdaw91@gmail.com",
+  location: "berlin",
+  blogs: [
+    { title: "why mac and cheese rules", likes: 30 },
+    { title: " ten things to make with marmite", likes: 50 },
+  ],
+  // login function
+  login: function () {
+    console.log("user logged in");
+  },
+  // logout funciton
+  logout: function () {
+    console.log("user logged out");
+  },
+  // log list blogs method
+  logBlogs: function () {
+    // arrow functions would not work
+
+    console.log("this user has written the following blogs:");
+    // can use foreach here
+    this.blogs.forEach(function (blog) {
+      console.log(blog.title, blog.likes);
+    });
+  },
+  // log end method
+  logEnd() {
+    // this is a different way to write methods inside objects
+    console.log(
+      "this is a different way to write regular funcitons as methods"
+    );
+  },
 };
 
 // calling method in user object
@@ -51,18 +52,18 @@ user.logout();
 user.logEnd();
 
 // testing outputting properties
-console.log(user.age)
-console.log(user.name)
+console.log(user.age);
+console.log(user.name);
 
 // can update property
 user.age = 35;
-console.log(user.age)
+console.log(user.age);
 
 // can also use sqaure brackets
-console.log(user['location']);
-user['name'] = 'chun -li' // helpfull if you wanted to make a variable
-console.log(user.name)
-console.log(typeof user) // its of object type
+console.log(user["location"]);
+user["name"] = "chun -li"; // helpfull if you wanted to make a variable
+console.log(user.name);
+console.log(typeof user); // its of object type
 
 // using Math object
 console.log(Math);
@@ -78,41 +79,42 @@ console.log(Math.trunc(area)); // takes just the first integer
 // generate random numbers
 const random = Math.random();
 console.log(random);
-console.log(Math.round(random * 100)) // nice way to get random number 0 - 100
+console.log(Math.round(random * 100)); // nice way to get random number 0 - 100
 
-
-// primitive values 
+// primitive values
 let scoreOne = 50;
 let scoreTwo = scoreOne;
 // creates a copy and stores on stack
- console.log(`scoreOne: ${scoreOne}` , `scoreTwo: ${scoreTwo}`)
+console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
 
 scoreOne = 100;
 // creates a copy and stores on stack
- console.log(`scoreOne: ${scoreOne}` , `scoreTwo: ${scoreTwo}`)
+console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
 
 // reference values
 
 userOne = {
-   name: 'ryu',
-   age: 30
+  name: "ryu",
+  age: 30,
 };
 // this will change only object in the heap, both variables
 // are pointing at same object in heap
 userTwo = userOne;
-userOne.age = 25
-console.log( userOne, userTwo );
+userOne.age = 25;
+console.log(userOne, userTwo);
 
+//The main difference between rest and spread is that
+//the rest operator puts the rest of some specific user
+//supplied values into a JavaScript array.But the spread
+//syntax expands iterables into individual elements.
 // testing out spread with objecstr
 const Car = {
-   make: "ford"
-}
+  make: "ford",
+};
 
 const newCar = {
-   ...Car,
-   milage: 27000
-}
+  ...Car,
+  milage: 27000,
+};
 
-console.log(newCar)
-
-
+console.log(newCar);
