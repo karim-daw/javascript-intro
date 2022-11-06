@@ -48,21 +48,21 @@ let user = {
 user.login();
 user.logBlogs();
 user.logout();
-// user.logEnd();
+user.logEnd();
 
-// // testing outputting properties
-// console.log(user.age)
-// console.log(user.name)
+// testing outputting properties
+console.log(user.age)
+console.log(user.name)
 
-// // can update property
-// user.age = 35;
-// console.log(user.age)
+// can update property
+user.age = 35;
+console.log(user.age)
 
-// // can also use sqaure brackets
-// console.log(user['location']);
-// user['name'] = 'chun -li' // helpfull if you wanted to make a variable
-// console.log(user.name)
-// console.log(typeof user) // its of object type
+// can also use sqaure brackets
+console.log(user['location']);
+user['name'] = 'chun -li' // helpfull if you wanted to make a variable
+console.log(user.name)
+console.log(typeof user) // its of object type
 
 // using Math object
 console.log(Math);
@@ -101,5 +101,18 @@ userOne = {
 // are pointing at same object in heap
 userTwo = userOne;
 userOne.age = 25
-console.log(userOne, userTwo);
+console.log( userOne, userTwo );
+
+// testing out spread with objecstr
+const Car = {
+   make: "ford"
+}
+
+const newCar = {
+   ...Car,
+   milage: 27000
+}
+
+console.log(newCar)
+
 

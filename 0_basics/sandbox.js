@@ -190,8 +190,17 @@ console.log( myScore, typeof myScore );
 // spread operator ...foo
 // this behaves liek teh *arg key word in pything
 // takes any array type and makes it into individula items
+const numbersExample = [1, 2, 3]
+const newNumbersExample = [...numbersExample, 4]
+console.log( newNumbersExample )
+
+// spread operator can also work on calsses
+// see classes file
+
+
 const filter = ( ...args ) => {
-   return args.filter(el => el === 1)
+   return args.filter(el => el === 1) 
 }
 
-console.log(filter(1,2,3))
+const numbers = [1,2,3,4,1,3,2,1]
+console.log( filter( numbers, 1, 2, 3 ) )
